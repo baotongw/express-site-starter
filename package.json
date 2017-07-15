@@ -1,0 +1,21 @@
+{
+  "name": "create-express",
+  "version": "0.0.1",
+  "description": "This is a starter for node express to create a site project quick.",
+  "main": "./bin/index.js",
+  "preferGlobal": true,
+  "bin": {
+    "create-express": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "starter",
+    "node"
+  ],
+  "author": "baotong.wang",
+  "license": "MIT",
+  "dependencies": {}
+}
