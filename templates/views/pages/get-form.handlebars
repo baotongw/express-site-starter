@@ -1,0 +1,25 @@
+{{#block 'body'}}
+<section class="box">
+    <h1 class="title">基于Html5的文件上传组件</h1>
+
+    <form method="get" action="/api/upload">
+        <div>
+            <input type="text" name="name" placeholder="Name" autocomplete="false"/>
+        </div>
+        <div>
+            <input type="password" name="pwd" placeholder="Password" autocomplete="false"/>
+        </div>
+        <div>
+            <input type="radio" name="sex" value="male" /> Male
+            <input type="radio" name="sex" value="female" /> Female
+        </div>
+        <div>
+            <input type="file" name="uploadFile" />
+        </div>
+        <input type="submit" value="Get 上传表单">
+    </form>
+</section>
+{{/block}}
+{{#block 'footer'}}
+<script src="/scripts/upload.js"></script>
+{{/block}}
