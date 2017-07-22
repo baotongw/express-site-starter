@@ -16,4 +16,8 @@ router.get('/post-upload', (req, res) => {
     res.render('pages/post-form');
 })
 
+router.get('/h5upload', (req, res) => {
+    res.render('pages/h5upload');
+})
+
 module.exports = router;
