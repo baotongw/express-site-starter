@@ -3,15 +3,17 @@
 const fs = require('fs')
 const path = require('path')
 const child_process = require('child_process')
+const color = require('../utils/color.js')
 
 // 项目所在目录
 const projectRoot = process.cwd()
 // 工程所在目录
 const commandRoot = path.dirname(__dirname)
+const requiredModules = require('./modules')
 
-console.log('Start to create express site.')
+console.log('Start to create express site.'.info)
 console.log('')
-console.log('1. Create Project Files')
+console.log('1. Create Project Files'.info)
 console.log('')
 
 function cpall(templateRoot, targetRoot) {
@@ -52,9 +54,10 @@ const templateFolder = path.resolve(commandRoot, 'templates')
 cpall(templateFolder, projectRoot)
 
 console.log('')
-console.log('2. Installing Modules')
-child_process.execSync('npm install --save express body-parser compress connect cookie-parser cookie-session csurf express-handlebars')
+console.log('2. Installing Modules'.info)
+console.log(requiredModules.gray)
+child_process.execSync('npm install ' + requiredModules + ' --save')
 console.log('')
-console.log('3. Run command npm start to start server')
+console.log('3. Run command node ./app.js to start server'.info)
 console.log('')
-console.log('Express Create Completed.')
+console.log('Express Create Completed.'.finish)

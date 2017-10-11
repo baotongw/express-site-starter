@@ -1,6 +1,6 @@
 {
-  "name": "create-express",
-  "version": "0.0.1",
+  "name": "express-site-starter",
+  "version": "0.0.2",
   "description": "This is a starter for node express to create a site project quick.",
   "main": "./bin/index.js",
   "preferGlobal": true,
@@ -17,5 +17,13 @@
   ],
   "author": "baotong.wang",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "maintainers": [
+    {
+      "name": "baotong.wang",
+      "email": "sdwangbaotong@hotmail.com"
+    }
+  ]
 }

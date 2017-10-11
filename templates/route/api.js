@@ -7,7 +7,6 @@ let apiRouter = function(router) {
         // let {name, pwd, sex} = req.query;
         // parse a file upload
         var form = new formidable.IncomingForm();
-
         
         form.parse(req, function(err, fields, files) {
             res.writeHead(200, {'content-type': 'text/plain'});
@@ -16,9 +15,7 @@ let apiRouter = function(router) {
             let {name, pwd, sex} = fields;
             let fileLength = files.length;
             res.end(`Get File Uploaded. Name: ${name}; Password: ${pwd}; Sex: ${sex}`)
-        });
-
-        
+        });        
     })
 
     router.post('/api/upload', (req, res) => {

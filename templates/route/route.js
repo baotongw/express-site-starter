@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const apiRouter = require('./api');
 
+// 事例router
 // 指定api router的绑定
 apiRouter(router);
 
@@ -16,7 +17,7 @@ router.get('/post-upload', (req, res) => {
     res.render('pages/post-form');
 })
 
-router.get('/h5upload', (req, res) => {
+router.get('/h5-upload', (req, res) => {
     res.render('pages/h5upload');
 })
 
