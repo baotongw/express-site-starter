@@ -59,5 +59,10 @@ console.log(requiredModules.gray)
 child_process.execSync('npm install ' + requiredModules + ' --save')
 console.log('')
 console.log('3. Run command node ./app.js to start server'.info)
+child_process.execSync('node ./app.js')
 console.log('')
+
+const siteUri = 'http://localhost:9000'
+console.log(`Open ${url}`.finish)
+opn(`${siteUri}`);
 console.log('Express Create Completed.'.finish)

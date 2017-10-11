@@ -18,7 +18,8 @@
   "author": "baotong.wang",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "opn": "^5.1.0"
   },
   "maintainers": [
     {
