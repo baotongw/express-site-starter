@@ -1,6 +1,6 @@
 {
   "name": "express-site-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a starter for node express to create a site project quick.",
   "main": "./bin/index.js",
   "preferGlobal": true,
